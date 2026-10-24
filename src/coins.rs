@@ -18,7 +18,7 @@ pub fn count_quarters(cents: u32) -> u32 {
 ///
 /// assert_eq!(count_dimes(87), 1);
 /// ```
-fn count_dimes(cents: u32) -> u32 {
+pub fn count_dimes(cents: u32) -> u32 {
     (cents % 25) / 10
 }
 
@@ -29,6 +29,6 @@ fn count_dimes(cents: u32) -> u32 {
 ///
 /// assert_eq!(leftover_cents(87), 2);
 /// ```
-pub fn leftover_cents(cents: u32) -> f64 {
+pub fn leftover_cents(cents: u32) -> u32 {
     (cents % 25) % 10
 }

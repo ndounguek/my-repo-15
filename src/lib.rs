@@ -18,7 +18,7 @@ pub mod coins;
 /// assert_eq!(dw15::change_summary(24), "quarters=0 dimes=2 cents=4");
 /// ```
 pub fn change_summary(cents: u32) -> String {
-    let quarters = coins::count_quaters(cents);
+    let quarters = coins::count_quarters(cents);
     let dimes = coins::count_dimes(cents);
     let leftover = coins::leftover_cents(cents);
     format!("quarters={} dimes={} cents={}", quarters, dimes, leftover)
